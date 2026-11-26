@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DanaRumah — Anggaran Rumah Tangga Keluarga Wijaya</title>
+<meta name="description" content="DanaRumah: perencana anggaran rumah tangga. Pantau pemasukan, belanja, tagihan, dan tabungan keluarga dalam satu tempat.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/dashboard" aria-label="DanaRumah — Beranda">
+      <span class="brand-mark" aria-hidden="true">⌂</span>
+      <span class="brand-name">DanaRumah</span>
+      <span class="brand-tag">anggaran keluarga</span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/dashboard" data-route="dashboard">Dasbor</a>
+      <a href="#/transaksi" data-route="transaksi">Transaksi</a>
+      <a href="#/anggaran" data-route="anggaran">Anggaran</a>
+      <a href="#/tujuan" data-route="tujuan">Tujuan</a>
+      <a href="#/tagihan" data-route="tagihan">Tagihan</a>
+      <a href="#/laporan" data-route="laporan">Laporan</a>
+      <a href="#/pengaturan" data-route="pengaturan">Pengaturan</a>
+    </nav>
+    <div class="month-switch" role="group" aria-label="Pilih bulan">
+      <button id="month-prev" type="button" aria-label="Bulan sebelumnya">‹</button>
+      <span id="month-label">November 2026</span>
+      <button id="month-next" type="button" aria-label="Bulan berikutnya">›</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="view" aria-live="polite"></main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>DanaRumah</strong> — anggaran rumah tangga Keluarga Wijaya. Semua data tersimpan di peramban Anda (localStorage) dan tidak pernah dikirim ke mana pun.</p>
+    <p class="footer-note">Angka dalam rupiah (IDR). Dibuat sebagai contoh perencana keuangan keluarga.</p>
+  </div>
+</footer>
+
+<div id="modal-root"></div>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
